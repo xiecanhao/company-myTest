@@ -12,6 +12,8 @@ public class Main5 {
 		int a = 8;
 		int b = a - 1 >> 1;
 		System.out.println(b);
+		// assert false;//断言，调试的时候使用，需要运行的时候添加 -ea参数才有效，为false的时候抛AssertionError
+		System.out.println(b);
 		// aaa();
 		// for (int i = 0; i < 100; i++)
 		// System.out.println((int) (Math.random() * 3));
