@@ -11,6 +11,7 @@ public class Main6 {
 		Map<Integer, User> group = new HashMap<>();
 		// group.put(1, new User(1, "xu1", 1));
 		group.put(2, new User(2, "xu2", 2));
+		group.put(2, new User(2, "xu2", 2));
 		group.put(3, new User(3, "xu3", 3));
 		group.put(4, new User(4, "xu4", 4));
 		Map<Integer, User> userMap = new HashMap<>();
