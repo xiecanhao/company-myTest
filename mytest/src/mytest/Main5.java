@@ -1,7 +1,6 @@
 package mytest;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.IdentityHashMap;
 import java.util.List;
@@ -12,11 +11,6 @@ public class Main5 {
 	public static void main(String[] args) {
 		int a = 8;
 		int b = a - 1 >> 1;
-		System.out.println(b);
-		Map<String, Object> map = new HashMap<>();
-		map.putAll(null);
-		int arr[][] = { { 1, 2, 3 }, { 4, 5, 6, 7 }, { 8, 9, 10 } };
-		// assert false;//断言，调试的时候使用，需要运行的时候添加 -ea参数才有效，为false的时候抛AssertionError
 		System.out.println(b);
 		// aaa();
 		// for (int i = 0; i < 100; i++)
@@ -31,7 +25,7 @@ public class Main5 {
 		// String s = System.getProperty("sun.boot.class.path");
 		// for (String temp : s.split(";")) {
 		// System.out.println(temp);
-		// }13213132
+		// }
 		// Hashtable<K, V>
 		// HashMap<K, V>
 	}
