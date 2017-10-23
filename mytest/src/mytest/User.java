@@ -1,15 +1,44 @@
 package mytest;
 
 public class User {
+	private int id;
+	private String name;
+	private int age;
 
-	public User(int i, String string, int j) {
+	public User(int id, String name, int age) {
+		this.id = id;
+		this.name = name;
+		this.age = age;
 	}
 
 	public User(User guser) {
+		this.id = guser.getId();
+		this.name = guser.getName();
+		this.age = guser.getAge();
 	}
 
-	public Integer getId() {
-		return null;
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
 	}
 
 }
