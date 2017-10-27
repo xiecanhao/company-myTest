@@ -12,6 +12,8 @@ public class Main {
 		 * String s = "0006"; Integer i = Integer.valueOf(s);
 		 * System.out.println(i);
 		 */
+		String e = System.getProperty("user.dir");
+		System.out.println(e);
 		int a = 11;
 		int b = a >> 1;
 		System.out.println(b);
