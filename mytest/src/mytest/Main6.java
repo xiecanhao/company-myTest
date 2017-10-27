@@ -1,12 +1,33 @@
 package mytest;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
 public class Main6 {
 	public static void main(String[] args) {
+		List<Integer> list = new ArrayList<>();
+		for (int i = 0; i < 10; i++) {
+			list.add(i);
+		}
+		System.out.println(Arrays.asList(list));
+		Iterator<Integer> it = list.iterator();
+		while (it.hasNext()) {
+			Integer temp = it.next();
+			if (temp == 5) {
+				it.remove();
+				break;
+			}
+		}
+		System.out.println(Arrays.asList(list));
+		if (true) {
+			return;
+		}
+
 		// 模拟group数据
 		Map<Integer, User> group = new HashMap<>();
 		// group.put(1, new User(1, "xu1", 1));
