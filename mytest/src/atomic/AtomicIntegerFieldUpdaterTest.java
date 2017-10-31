@@ -15,6 +15,8 @@ public class AtomicIntegerFieldUpdaterTest {
 	void doit() {
 		DemoData data = new DemoData();
 		System.out.println("1===>" + getUpdate("value1").getAndSet(data, 10));
+		System.out.println(
+				"valueL===>" + getUpdate("valueL").incrementAndGet(data));
 		System.out.println("2===>" + getUpdate("value2").incrementAndGet(data));
 		System.out.println("3===>" + getUpdate("value3").decrementAndGet(data));
 		System.out.println(getUpdate("value1").get(data));
@@ -26,6 +28,7 @@ public class AtomicIntegerFieldUpdaterTest {
 
 class DemoData {
 	public volatile int value1 = 1;
+	public volatile long valueL = 1;
 	volatile int value2 = 2;
 	protected volatile int value3 = 3;
 	private volatile int value4 = 4;
