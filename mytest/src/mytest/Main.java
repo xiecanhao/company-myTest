@@ -7,6 +7,18 @@ import java.util.Date;
 
 public class Main {
 	public static void main(String[] args) {
+		Object o;
+		Thread t;
+		Integer i1 = 1;
+		System.out.println(i1.hashCode());
+		Integer i2 = 2;
+		System.out.println(i2.hashCode());
+		Integer i15 = 15;
+		System.out.println(i15.hashCode());
+		Integer i16 = 16;
+		System.out.println(i16.hashCode());
+		System.out.println((1L << 64L));
+		System.out.println((1 >>> 60));
 		System.out.println("main");
 		/*
 		 * String s = "0006"; Integer i = Integer.valueOf(s);
