@@ -7,8 +7,10 @@ import java.util.Date;
 
 public class Main {
 	public static void main(String[] args) {
-		Object o;
-		Thread t;
+		((Main) null).testStringIntern();
+		if (true) {
+			return;
+		}
 		Integer i1 = 1;
 		System.out.println(i1.hashCode());
 		Integer i2 = 2;

@@ -37,6 +37,7 @@ class TargetClass {
 		synchronized (TestLock.lock) {
 			TestLock.count++;
 			TestLock.lock.wait(5000);
+			// Thread.currentThread().wait(5000);
 			System.out.println(TestLock.count);
 		}
 	}
