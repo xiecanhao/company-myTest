@@ -1,14 +1,20 @@
 package mytest;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 //import org.nutz.lang.Strings;
 
 //import com.wabao.module.fight.Unit;
 
 public class Main8 {
 	public static void main(String[] args) {
-		// Integer.parseInt("");
-		sdfa();
-		sdfa("asdfasf");
+		List<Integer> list = new ArrayList<Integer>();
+		for (int i = 0; i < 5; i++) {
+			list.add(i);
+		}
+		List<Integer> l = Collections.unmodifiableList(list);
 	}
 
 	public static void sdfa(String... strings) {

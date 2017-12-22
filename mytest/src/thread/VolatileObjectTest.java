@@ -1,7 +1,7 @@
 package thread;
 
 public class VolatileObjectTest implements Runnable {
-	private ObjectA a; // 加上volatile 就可以正常结束While循环了
+	private volatile ObjectA a; // 加上volatile 就可以正常结束While循环了
 
 	public VolatileObjectTest(ObjectA a) {
 		this.a = a;
@@ -20,7 +20,7 @@ public class VolatileObjectTest implements Runnable {
 		long i = 0;
 		while (a.isFlag()) {
 			i++;
-			// if (i % 1000 == 0) {//内部不操作，可能a对象的属性被提取到外部，可参考java的逃逸分析
+			// if (i % 1000 == 0) {// 内部不操作，可能a对象的属性被提取到外部，可参考java的逃逸分析
 			// System.out.println(i);
 			// }
 		}
