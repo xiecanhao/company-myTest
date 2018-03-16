@@ -10,5 +10,7 @@ public class Main2 {
 		System.out.println(f);
 		int i = 0B01_10;
 		System.out.println(i);
+		Integer intvalue = null;
+		System.out.println(intvalue == 1);
 	}
 }
