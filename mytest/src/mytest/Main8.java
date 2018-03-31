@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import mytest.Main9.State;
+
 //import org.nutz.lang.Strings;
 
 //import com.wabao.module.fight.Unit;

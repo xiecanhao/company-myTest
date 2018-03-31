@@ -1,7 +1,5 @@
 package mytest;
 
-import java.util.Optional;
-
 public class Main10 {
 	public static void main(String[] args) {
 		// for (int i$ = 0; i$ < len$; ++i$) {
