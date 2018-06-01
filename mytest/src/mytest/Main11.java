@@ -6,6 +6,10 @@ import java.util.List;
 
 public class Main11 {
 	public static void main(String[] args) {
+		int io = Integer.MAX_VALUE << 1;
+		System.out.println(io);
+		if (true)
+			return;
 		List<Demo11> list = new ArrayList<>();
 		for (long i = 0; i < 100000; i++) {
 			Demo11 d1 = new Demo11(System.currentTimeMillis());
