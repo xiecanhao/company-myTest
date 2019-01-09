@@ -2,6 +2,8 @@ package mytest;
 
 public class Main10 {
 	public static void main(String[] args) {
+		Object o = null;
+		Class<Object> c = Object.class;
 		// for (int i$ = 0; i$ < len$; ++i$) {
 		// Annotation an = arr$[i$];
 		// if (an instanceof Required) {

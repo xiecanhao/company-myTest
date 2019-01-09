@@ -4,9 +4,26 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class Main {
+	static String sss;
+
 	public static void main(String[] args) {
+		String arr2[] = new String[5];
+		List<String> list = new ArrayList<String>() {
+			{
+				add("123");
+				add("456");
+			}
+		};
+		list.stream().forEach(l -> {
+			arr2[0] = l;
+			sss = l;
+		});
+		List<Long> l = new ArrayList<>();
+		l.add(1l);
+		long arr[] = new long[3];
 		((Main) null).testStringIntern();
 		if (true) {
 			return;
@@ -31,8 +48,8 @@ public class Main {
 		int a = 11;
 		int b = a >> 1;
 		System.out.println(b);
-		ArrayList<Main> list = new ArrayList<Main>();
-		list.add(new Main());
+		ArrayList<Main> list2 = new ArrayList<Main>();
+		list2.add(new Main());
 		Main m = new Main();
 		Main m2 = new Main();
 		System.out.println(m.equals(m2));

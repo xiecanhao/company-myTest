@@ -6,6 +6,8 @@ import java.util.List;
 
 public class Main11 {
 	public static void main(String[] args) {
+		int j = 12;
+		System.out.println(j += j -= j *= j);
 		int io = Integer.MAX_VALUE << 1;
 		System.out.println(io);
 		if (true)
